@@ -13,4 +13,6 @@ HTML-страница загружается напрямую с сайта: htt
 
 ## Установка зависимостей
 ```bash
+git clone https://github.com/AlenaMartyn/pedagogy-parser.git
+cd pedagogy-parser
 pip install -r requirements.txt
