@@ -6,12 +6,7 @@ import requests
 def load_page():
     url = "https://pedsovet.org/"
     
-    # Добавляем заголовки чтобы сайт не блокировал нас
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-    }
-    
-    response = requests.get(url, headers=headers)
+    response = requests.get(url)
     
     if response.status_code == 200:
         return response.text
