@@ -3,7 +3,7 @@ import requests # Импортируем библиотеку requests для о
 
 def parse_articles():
     html = requests.get('https://pedsovet.org/').text # Отправляем запрос на сайт и получаем HTML-код
-    soup = BeautifulSoup(html, 'html.parser')
+    soup = BeautifulSoup(html, 'html.parser') #Создать объект для анализа HTML, используя HTML-парсер, и записать его в переменную soup
     cards = soup.select('div.cards-unt-item') # Ищем ВСЕ элементы div с классом 'cards-unt-item' (это карточки статей)
     
     articles = []
