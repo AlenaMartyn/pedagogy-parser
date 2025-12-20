@@ -20,5 +20,21 @@ HTML-страница загружается напрямую с сайта: htt
 ```bash
 git clone https://github.com/AlenaMartyn/pedagogy-parser.git
 cd pedagogy-parser
+python -m venv venv
+venv\Scripts\activate
 pip install -r requirements.txt
 python parse_pedagogy.py
+## Для macOS
+# Клонирование
+git clone https://github.com/AlenaMartyn/pedagogy-parser.git
+cd pedagogy-parser
+
+# Создание виртуального окружения
+python3 -m venv venv
+source venv/bin/activate
+
+# Установка зависимостей
+pip3 install -r requirements.txt
+
+# Запуск
+python3 parse_pedagogy.py
